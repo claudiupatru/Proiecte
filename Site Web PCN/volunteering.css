@@ -1,0 +1,98 @@
+*{
+  font-family: "Permanent Marker",cursive;
+  color: white;
+}
+
+body {
+    background-color: rgb(11, 11, 72);
+  }
+.up{
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #213;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr{
+    background-color: rgb(11, 11, 72);
+    padding: 15px;
+    border: 1px solid #ddd;}
+  
+  th {
+    background-color: #142821;
+    color: white;
+  }
+  ul {
+    overflow: hidden;
+    --border-size: 3px;
+    --border-angle: 0turn;
+    width: auto;
+    height: auto;
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 50%,
+        #213
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #2d00f7,
+        #c200fb,
+        #ec7d10,
+        #30f2f2,
+        #7cb518
+      );
+    background-size: calc(100% - (var(--border-size) * 2))
+        calc(100% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    animation: bg-spin 3s linear infinite;
+    }
+    @keyframes bg-spin {
+        from{
+            --border-angle: 0turn;
+        }
+      to {
+        --border-angle: 1turn;
+      }
+   }
+   
+  @property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+  }

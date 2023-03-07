@@ -1,0 +1,41 @@
+#grid{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+body{
+    background-color: rgb(52, 12, 89);
+}
+h3{
+    color: white;
+    font-family: "Permanent Marker",cursive;
+    font-size: 30px;
+}
+#start{
+    margin-top: 5px;
+    padding: 10px;
+    padding-left: 182px;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    color: white;
+    background-color: rgb(52, 12, 89);
+    font-family: "Permanent Marker",cursive;
+    border: white solid 2px;
+    border-radius: 16px;
+}
+#restart{
+    margin-top: 5px;
+    padding: 10px;
+    padding-left: 175px;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    color: white;
+    background-color: rgb(52, 12, 89);
+    font-family: "Permanent Marker",cursive;
+    border: white solid 2px;
+    border-radius: 16px;
+}

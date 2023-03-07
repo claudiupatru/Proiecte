@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact</title>
+ <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteering.html">Portofolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li style="float:right"><a class="active" href="about.html">About</a></li>
+      </ul>
+  <div>
+<center>
+<h3>Contactacteaza-ma daca ai vreo intrebare!</h3>
+</center>
+<div class="container">
+  <form action="mailto:claupatru8@gmail.com" method="get" enctype="text/plain">
+    <label for="fname" style="color: black">Nume</label>
+    <input type="text" id="fname" name="firstname" placeholder="Aici va introduceti numele..">
+
+    <label for="lname" style="color: black">Prenume</label>
+    <input type="text" id="lname" name="lastname" placeholder="Aici va introduceti prenumele..">
+
+    <label for="sex" style="color: black">Sexul</label>
+    <select id="sex" name="sex">
+      <option value="masculin">Masculin</option>
+      <option value="feminin">Feminin</option>
+      <option value="neutru">Prefer sa nu spun</option>
+    </select>
+
+    <label for="subject" style="color: black">Subiect</label>
+    <textarea id="subject" name="subject" placeholder="Va rog scrieti aici.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

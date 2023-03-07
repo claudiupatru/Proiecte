@@ -1,0 +1,146 @@
+*{
+  font-family: "Permanent marker", cursive;
+}
+body{
+    background-color: #213;
+background-image: url("2.jpg");
+   background-repeat: no-repeat;
+   background-position: right top;
+   margin-right: 100px;
+   background-attachment: fixed;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 2px solid green;
+    padding: 100px;
+    background-color: goldenrod;
+  }
+ .upper{
+    background-color: burlywood;
+    border-radius: 0%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin:auto;
+ }
+ .left{
+    border-radius: 20%;
+    overflow: hidden;
+ }
+ .right{
+    margin:auto 29px;
+    line-height: 1.5rem;
+    font-size: 20px;
+ }
+ .lower{
+    display: flex;
+    justify-content: space-around;
+ }
+
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #213;
+  }
+  div {
+    background-color: lightgrey;
+    width: 500px;
+    border: 15px solid #213;
+    padding: 50px;
+    margin: 20px;
+  }
+  .circle{
+    list-style-type:circle; 
+  }
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right,.img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right, .upper, .img,div {
+      width: 100%;
+    }
+}
+ul {
+  overflow: hidden;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: auto;
+  height: auto;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(
+      from var(--border-angle),
+      transparent 20%,
+      #2d00f7,
+      #c200fb,
+      #ec7d10,
+      #30f2f2,
+      #7cb518
+    );
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+  }
+  @keyframes bg-spin {
+      from{
+          --border-angle: 0turn;
+      }
+    to {
+      --border-angle: 1turn;
+    }
+ }
+ 
+@property --border-angle {
+syntax: "<angle>";
+inherits: true;
+initial-value: 0turn;
+}
